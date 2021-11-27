@@ -15,7 +15,7 @@ There is 2 scripts:
 ## Install from git
 
 ```shell
-git https://github.com/martin-denizet/apache_logs_parser_lite ~/apache_logs_parser_lite
+git clone https://github.com/martin-denizet/apache_logs_parser_lite ~/apache_logs_parser_lite
 ```
 
 ## generate_json.py
