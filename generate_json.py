@@ -52,7 +52,6 @@ def parse_line(line):
     """
     Convert a string log line into a dict
     :param line: Apache log line
-    :return:
     :rtype: dict|False
     """
     match = REGEX.search(line)
@@ -175,7 +174,7 @@ def generate_json(apache_log_file_name, output_json_file_name):
         # Extract the data from the log as a list of dictionaries
         data = parse_log_file(apache_log_file_name)
         # Create a JSON file with the data.
-        # indent option allows to prerry-print the JSON, otherwise it will be written as a single line
+        # indent option allows to pretty-print the JSON, otherwise it will be written as a single line
         json.dump(data, json_file, indent=4)
         print(f"Wrote {len(data)} entries to file {output_json_file_name}")
 
